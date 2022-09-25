@@ -4,7 +4,7 @@
 
 It replaces my typical workflow
 
-```commandline
+```
 gh repo create NewProject --clone
 
 cd NewProject
@@ -17,7 +17,7 @@ git push -u origin main
 ```
 
 with
-```commandline
+```
 create NewProject
 ```
 
