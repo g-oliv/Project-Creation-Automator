@@ -13,7 +13,6 @@ def createProject():
         if len(sys.argv) < 2:
             raise MissingArgumentException()
 
-        projectName = sys.argv[1]
         if len(sys.argv) < 3:
             visibility = "public"
         elif sys.argv[2].lower() == "public":
@@ -23,13 +22,15 @@ def createProject():
         else:
             raise InvalidArgumentException()
 
-        print(projectName, visibility)
+        print(visibility)
 
     except MissingArgumentException as mae:
         print(mae)
     except InvalidArgumentException as iae:
         print(iae)
 
+    sys.exit(1)
 
-if __name__ == "__main__":
-    createProject()
+
+# if __name__ == "__main__":
+#     createProject()
