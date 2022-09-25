@@ -1,8 +1,8 @@
 # Project Creation Workflow Automator
 
-#### This project automates the project creation workflow
+#### This project automates the typical project creation workflow
 
-It replaces my typical workflow
+It replaces my typical workflow:
 
 ```
 gh repo create NewProject --clone
@@ -16,15 +16,16 @@ git add . && git commit -a -m "Initial Commit"
 git push -u origin main
 ```
 
-with
+with:
 ```
-create NewProject
+new MyNewProject
 ```
-
-It makes use of GitHub cli to create a remote repo and clone it. \
-There is the option to choose repo visibility, with default as **_public_**
-```commandline
-gh repo create NewProject --private --clone
+\
+It makes use of [GitHub cli ](https://cli.github.com/) to create a remote repo and clone it. \
+There is the option to choose remote repo visibility,
 ```
+new MyNewProject private
+```
+which sets it as either private or public, with default as **_public_**.
 
 
