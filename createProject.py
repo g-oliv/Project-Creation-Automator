@@ -13,11 +13,9 @@ def createProject():
         if len(sys.argv) < 2:
             raise MissingArgumentException()
 
-        if len(sys.argv) < 3:
-            visibility = "public"
-        elif sys.argv[2].lower() == "public":
+        if len(sys.argv) < 3 or sys.argv[2].lower() == PUBLIC:
             visibility = PUBLIC
-        elif sys.argv[2].lower() == "private":
+        elif sys.argv[2].lower() == PRIVATE:
             visibility = PRIVATE
         else:
             raise InvalidArgumentException()
