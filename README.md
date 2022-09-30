@@ -28,4 +28,12 @@ new MyNewProject private
 ```
 which sets it as either private or public, with default as **_public_**.
 
+## Install
+1. Clone the repo 
+2. Open .zshrc or .bashrc in your editor, depending on your shell
+3. Add the following at the end of the file and replace with the path to the repo clone
+
+```
+source /<YOUR-PATH>/ProjectCreationAutomator/createProject.sh
+```
 
